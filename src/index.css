@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate(0, -50px) rotateZ(20deg);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -80px) rotateZ(300deg);
+  }
+}
+
+@layer components {
+  .ball {
+    position: absolute;
+    bottom: -10px;
+    left: 9.5rem;
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+    z-index: -1;
+    animation:
+      bounce 1s cubic-bezier(0, 0, 0, 0) infinite alternate,
+      fall 2s ease-out 1s infinite alternate;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
