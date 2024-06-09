@@ -19,7 +19,7 @@ export default function Aboutme() {
     },
     {
       name: 'Michael Kadimov',
-      data: 'a dedicated web developer based in Sderot, Israel. My background includes studying Industrial Engineering at Sapir College, which provided a strong foundation in analytical thinking and problem-solving. During the COVID-19 pandemic, I transitioned to web development, discovering a passion and aptitude for the field. I specialize in JavaScript, with extensive experience in React, Node.js, and MongoDB. My skill set includes both front-end and back-end development, enabling me to build comprehensive, user-friendly web applications. I am committed to continuous learning and enjoy collaborating with fellow developers to create innovative solutions.',
+      data: 'a dedicated web developer based in Sderot, Israel. My background includes studying industrial engineering at Sapir College, which provided me with a strong foundation in analytical thinking and problem-solving. During the COVID-19 pandemic, I transitioned to web development, discovering passion and aptitude for the field. I specialize in JavaScript, with extensive experience in React, Node.js and MongoDB from side-projects. My skill set includes both front-end and back-end development, enabling me to build comprehensive and user-friendly web applications. I am committed to continuous learning and enjoy collaborating with fellow developers to create innovative solutions.',
     },
     {
       titleA: 'Experience',

@@ -1,9 +1,10 @@
 import Icons from '../ui services/Icons';
 import Stickers from '../ui services/Stickers';
+import CV from '../assets/CV.pdf';
 
 export default function Preface() {
   return (
-    <section className=" mt-40 space-y-8 sm:mt-60" id="/">
+    <section className=" mt-[7rem] space-y-8 sm:mt-60" id="/">
       <div className="flex flex-wrap items-center justify-center">
         <span className="font-shalomfont mt-10 h-5 text-7xl text-blue-700 drop-shadow-2xl">
           Shalom
@@ -16,14 +17,22 @@ export default function Preface() {
           Michael Kadimov
         </span>
 
-        <span>MERN Stack Web Developer</span>
+        <span>Full-Stack Web Developer</span>
       </div>
       <div className="flex items-center justify-center gap-20 py-4 text-[3rem]">
-        <button>
-          <Stickers className=" w-14" type="CV" />
-        </button>
-        <Icons type="linkedIn" />
-        <Icons type="github" />
+        <a href={CV} target="_blank">
+          <Stickers className="w-14" type="CV" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/michael-kadimov-455907271/"
+          target="_blank"
+        >
+          <Icons type="linkedIn" />
+        </a>
+        <a href="https://github.com/MichaelzXVI" target="_blank">
+          <Icons type="github" />
+        </a>
       </div>
       <div className="flex items-center justify-center gap-3 py-2">
         <Icons className="text-2xl" type="mouse" />

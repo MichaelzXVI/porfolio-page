@@ -45,12 +45,10 @@ export default function Projects() {
           ))}
         </div>
       </div> */}
-      <span className="sm:px-5">Work In Progress...</span>
-      <hr />
-      <div className="flex justify-center py-10 text-4xl italic text-gray-400">
-        TO BE ADDED SOON
+      <div className="flex flex-col items-center justify-center pb-20 ">
+        <span className="text-sm sm:px-5">Work In Progress...</span>
+        <span className="text-4xl italic text-gray-400">TO BE ADDED SOON</span>
       </div>
-      <hr />
     </section>
   );
 }
