@@ -19,7 +19,7 @@ export default function Preface() {
 
         <span>Full-Stack Web Developer</span>
       </div>
-      <div className="flex items-center justify-center gap-20 py-4 text-[3rem]">
+      <div className="flex items-center justify-center gap-20 text-[3rem] sm:py-4">
         <a href={CV} target="_blank">
           <Stickers className="w-14" type="CV" />
         </a>
@@ -34,7 +34,7 @@ export default function Preface() {
           <Icons type="github" />
         </a>
       </div>
-      <div className="flex items-center justify-center gap-3 py-2">
+      <div className="flex items-center justify-center gap-3 pb-10">
         <Icons className="text-2xl" type="mouse" />
         <p className="text-[1.1em]">Scroll down to get to know me better</p>
       </div>
