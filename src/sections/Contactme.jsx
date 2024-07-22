@@ -3,10 +3,18 @@ import Dividers from '../ui services/Dividers';
 import Card from '../ui/Card';
 import Icons from '../ui services/Icons';
 import Notifications from '../ui/Notifications';
+import { IoIosPhonePortrait } from 'react-icons/io';
+import { GiVibratingSmartphone } from 'react-icons/gi';
+import { RiWhatsappFill } from 'react-icons/ri';
+import { BsPhoneFill } from 'react-icons/bs';
 import Stickers from '../ui services/Stickers';
+import { MdSmartphone } from 'react-icons/md';
+import { SiImessage } from 'react-icons/si';
+import { FaWhatsappSquare } from 'react-icons/fa';
 
 export default function Contactme() {
   const [showNotification, setShowNotification] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
 
   function handleClick(item) {
     if (item.title === 'Email') {
@@ -74,6 +82,22 @@ export default function Contactme() {
             <span className="font-logofont font-bold">{item.title}</span>
           </Card>
         ))}
+        <div className="relative">
+          <Card type="contactme" onClick={() => setShowPhone(!showPhone)}>
+            <MdSmartphone />
+            <span className="font-logofont font-bold">Phone</span>
+          </Card>
+          {showPhone && (
+            <div className=" absolute -bottom-14 flex w-full flex-col rounded-b-lg border border-t-0 border-slate-950 bg-[#dad8d7] py-3 text-center ">
+              054-910-7593
+              <div className="text-md flex items-center justify-center gap-5 pt-2">
+                <GiVibratingSmartphone />
+                <FaWhatsappSquare />
+                <SiImessage />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       {showNotification && <Notifications />}
